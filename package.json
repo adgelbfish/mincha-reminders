@@ -9,7 +9,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
-    "postversion": "npm run build"
+    "postversion": "npm run build",
     "start": "node ./build/app.js"
   },
   "author": "",
