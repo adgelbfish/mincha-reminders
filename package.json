@@ -9,7 +9,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
-    "prestart": "npm run build",
+    "postinstall": "npm run build",
     "start": "node build/app.js"
   },
   "author": "",
@@ -22,6 +22,8 @@
     "later": "^1.2.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
     "nodemon": "^1.9.2",
     "npm-run": "^3.0.0"
   }
