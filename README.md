@@ -13,6 +13,4 @@ Schedules are set using later.js in server/config/schedule.js (there is sample c
 ##get it up and running
 1. set up the config
 2. npm install
-3. npm install -g babel-cli
-4. npm build
-5. npm start
+3. npm start
