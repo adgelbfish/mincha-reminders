@@ -17,7 +17,7 @@ app.get('/inbound', function (req, res) {
         res.send('message received');
 });
 
-app.listen(3000);
+app.listen(5000);
 
 (0, _runSchedule2.default)();
 //# sourceMappingURL=app.js.map
