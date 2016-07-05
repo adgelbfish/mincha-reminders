@@ -3,7 +3,12 @@ import runSchedule from './lib/runSchedule'
 
 const app = express();
 
-app.use(express.static('./public'));
+app.set('view engine', 'pug');
+
+app.get('/', (req, res) => {
+    res.render('index')
+}
+)
 
 app.get('/inbound', (req, res) => {
         console.log(req.query);
